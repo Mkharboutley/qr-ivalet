@@ -1,0 +1,107 @@
+.container {
+  background-color: #1e1e1e;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.7rem;
+}
+
+.logo {
+  max-width: 250px;
+  margin-bottom: 0.5rem;
+    object-fit: cover;
+
+}
+
+.gif {
+  padding-top: 0.5rem;
+  width: 100%;
+  hight:100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+
+.card {
+  background: #1f283e;
+  border-radius: 20px;
+  padding: 0.2rem;
+  width: 90%;
+  max-width: 30vh;         /* Smaller width */
+  height:40vh;             /* Set height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+    border: 2px solid #0077ff;
+    box-shadow: 0 0 12px rgba(3, 255, 239, 0.9);
+    animation: glowBorder 1.5s infinite alternate;
+}
+
+@keyframes glowBorder {
+  from {
+    box-shadow: 0 0 12px rgba(0, 255, 221, 0.3);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(0, 255, 221, 0.9);
+  }
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.detail {
+  text-align: left;
+  margin-bottom: 1.0rem;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.countdown {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3eaacf;
+  margin-bottom: 2rem;
+}
+
+.button {
+  background: linear-gradient(135deg, #736efe, #5efce8);
+  color: white;
+  padding: 1.0rem 1.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-top: 0.1rem;
+  margin-bottom: 1.3rem;
+  box-shadow: 0 4px 15px rgba(94, 252, 232, 0.4);
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .countdown {
+    font-size: 1.6rem;
+  }
+
+  .detail {
+    font-size: 0.95rem;
+  }
+}

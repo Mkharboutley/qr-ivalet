@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  background-color: #2e2737;
+  min-height: 100vh;
+  box-sizing: border-box;
+  color: white;
+}
+
+.topBar {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input {
+  padding: 1rem;
+  border: none;
+  border-radius: 0.7rem;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.input::placeholder {
+  color: #888;
+}
+
+.button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #0070f3;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #005ec0;
+}
+
+.qrCard {
+  background: white;
+  color: black;
+  border-radius: 1.2rem;
+  padding: 24px 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  max-width: 460px;
+  margin-bottom: 24px;
+}
+
+.qrTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.qrInfo {
+  font-size: 0.95rem;
+  color: #333;
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+
+.closeButton {
+  margin-top: 1.5rem;
+  background: #a78bfa;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  background: #8b5cf6;
+}
